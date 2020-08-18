@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const REST_API_URL = 'http://localhost:8080/api/activities';
-const REST_API_IMG_URL = 'http://localhost:8080/api/images'
+const REST_API_URL = 'https://frozen-dusk-27272.herokuapp.com/api/activities';
+const REST_API_IMG_URL = 'https://frozen-dusk-27272.herokuapp.com/api/images';
 
 class ActivityService {
 
