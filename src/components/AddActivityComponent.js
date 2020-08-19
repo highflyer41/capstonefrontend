@@ -61,7 +61,7 @@ class AddActivityComponent extends React.Component {
                     <div className="form-group">
                         <div className="dropdown show">
                         <label>Select Image list (select one):</label>
-                        <select className="form-control" onChange={this.selectImage}>
+                        <select className="form-control" style={{width: "50%", margin: "auto"}} onChange={this.selectImage}>
                             <option value="https://i.ibb.co/C19Wfx7/Brush-Teeth.jpg">Brush Teeth</option>
                             <option value="https://i.ibb.co/kJd22WZ/Ride-in-Car.jpg">Ride in Car</option>
                             <option value="https://i.ibb.co/9TjQBdN/Toilet.jpg">Bathroom</option>
