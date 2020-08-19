@@ -3,6 +3,8 @@ import axios from 'axios';
 const REST_API_URL = 'https://frozen-dusk-27272.herokuapp.com/api/activities';
 const REST_API_IMG_URL = 'https://frozen-dusk-27272.herokuapp.com/api/images';
 
+const TEST_API_URL = 'http://localhost:8080/api/activities';
+
 class ActivityService {
 
     getActivities() {

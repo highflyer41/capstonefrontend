@@ -79,12 +79,13 @@ class ActivityComponent extends React.Component {
         return (
             <div>
                 <h1 className="text-center">Activities List</h1>
-
-                <div className="card-deck" onChange={this.updateImage}>
+                <div className="container">
+                <div className="row" onChange={this.updateImage}>
                     {this.state.activities.map(
                         activity =>
-                        <div className="card" key={activity.id}>
-                            <img className="card-img-top" src={activity.imageUrl} alt="Card image"></img>
+                        <div className="col-sm-3 my-3">
+                        <div className="card h-100" key={activity.id}>
+                            <img className="card-img-top" src={activity.imageUrl} alt="Card"></img>
                             <div className="card-body">
                                 <h4 className="card-title">{activity.duration} minutes</h4>
                                 <p className="card-text">{activity.name}</p>
@@ -94,9 +95,11 @@ class ActivityComponent extends React.Component {
                                 <button name={activity.id} onClick={this.deleteActivity}>Delete</button>
                             </div>
                         </div>
+                        </div>
                     )}
                 </div>
-
+                </div>
+                
                 <div className="modal fade" id="countdown" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog" role="document">
                                     <div className="modal-content">
