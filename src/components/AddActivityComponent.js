@@ -48,8 +48,8 @@ class AddActivityComponent extends React.Component {
             <div>
                 <ActivityComponent />
 
-                <h1 className="text-center">Add Activity</h1>
-                <form onSubmit={this.submitActivity}>
+                <h1 className="text-center" style={{marginTop: "3em"}}>Add Activity</h1>
+                <form style={{marginBottom: "4em"}} onSubmit={this.submitActivity}>
                     <div className="form-group">
                         <label>Activity</label><br></br>
                         <textarea name="name" onChange={this.activityChange}></textarea>
@@ -83,7 +83,7 @@ class AddActivityComponent extends React.Component {
                         </select>
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-primary">Submit</button>  
+                    <button type="submit" className="btn btn-info">Submit</button>  
                 </form>
             </div>
         )

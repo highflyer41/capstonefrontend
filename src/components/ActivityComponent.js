@@ -78,7 +78,7 @@ class ActivityComponent extends React.Component {
     render() {
         return (
             <div style={{backgroundColor: "#FCA4BC"}}>
-                <h1 className="text-center">Activities List</h1>
+                <h1 className="text-center" style={{paddingTop: "1em"}}>Activities List</h1>
                 <div className="container">
                 <div className="row" onChange={this.updateImage}>
                     {this.state.activities.map(
