@@ -77,7 +77,7 @@ class ActivityComponent extends React.Component {
 
     render() {
         return (
-            <div>
+            <div style={{backgroundColor: "#FCA4BC"}}>
                 <h1 className="text-center">Activities List</h1>
                 <div className="container">
                 <div className="row" onChange={this.updateImage}>
@@ -91,8 +91,8 @@ class ActivityComponent extends React.Component {
                                 <p className="card-text">{activity.name}</p>
                             </div>
                             <div className="card-footer">
-                                <button onClick={this.startActivity} className="btn btn-primary" data-toggle="modal" data-target="#countdown" name={activity.duration} value={activity.name}>Start Activity</button>
-                                <button name={activity.id} onClick={this.deleteActivity}>Delete</button>
+                                <button onClick={this.startActivity} className="btn btn-info" data-toggle="modal" data-target="#countdown" name={activity.duration} value={activity.name}>Start Activity</button>
+                                <button className="btn btn-danger" name={activity.id} onClick={this.deleteActivity}>Delete</button>
                             </div>
                         </div>
                         </div>
@@ -111,7 +111,7 @@ class ActivityComponent extends React.Component {
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-dismiss="modal" onClick={this.closeCountdown}>Close</button>
-                                    <button type="button" className="btn btn-primary" onClick={this.closeCountdown}>Save changes</button>
+                                    <button type="button" className="btn btn-primary" onClick={this.closeCountdown}>Pause</button>
                                 </div>
                             </div>
                         </div>
